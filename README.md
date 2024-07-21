@@ -12,15 +12,15 @@ A user-friendly GUI application to read barcodes from images using Python. This 
 
 ## 📷 Screenshots
 
-![Screenshot 1](screenshot_1.png)
-![Screenshot 2](screenshot_2.png)
+![Screenshot 1](screenshot1.png)
+![Screenshot 2](screenshot2.png)
 
 ## 🛠️ Installation
 
 1. Clone the repository:
     ```bash
     git clone https://github.com/CRXNCM/BarCode.git
-    cd barcode-reader-gui
+    cd BarCode
     ```
 
 2. Install the required packages:
@@ -30,7 +30,7 @@ A user-friendly GUI application to read barcodes from images using Python. This 
 
 3. Run the application:
     ```bash
-    python barcode_reader_gui.py
+    python Barcode.py
     ```
 
 ## 📝 Usage
