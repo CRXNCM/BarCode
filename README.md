@@ -12,8 +12,8 @@ A user-friendly GUI application to read barcodes from images using Python. This 
 
 ## 📷 Screenshots
 
-![Screenshot 1](screenshot1.png)
-![Screenshot 2](screenshot2.png)
+![Screenshot 1](Images/screenshot1.png)
+![Screenshot 2](Images/screenshot2.png)
 
 ## 🛠️ Installation
 
