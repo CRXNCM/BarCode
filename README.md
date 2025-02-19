@@ -1,58 +1,83 @@
+# 📱 Professional QR Code Generator
 
-# 📸 Barcode Reader GUI
-
-A user-friendly GUI application to read barcodes from images using Python. This project utilizes `tkinter` for the graphical interface, `Pillow` for image processing, and `pyzbar` for barcode decoding.
+A feature-rich GUI application for generating customized QR codes using Python. Built with `tkinter` for the interface, `qrcode` for QR generation, and `Pillow` for image processing.
 
 ## 🚀 Features
 
-- **Open Image:** Select an image file containing barcodes.
-- **Barcode Detection:** Automatically detects and decodes barcodes from the selected image.
-- **Results Display:** Displays the type and data of each detected barcode.
-- **Save Results:** Save the barcode information to a text file for future reference.
+- **Multiple Content Types:** Generate QR codes for:
+  - Text/URL
+  - WiFi credentials
+  - vCard contacts
+  - Email addresses
+  - Phone numbers
+  - Geographic locations
 
-## 📷 Screenshots
+- **Advanced Customization:**
+  - Multiple style patterns (Square, Circle, Rounded, etc.)
+  - Custom colors and gradients
+  - Logo embedding
+  - Error correction levels
+  - Size and border adjustments
 
-![Screenshot 1](Images/screenshot1.png)
-![Screenshot 2](Images/screenshot2.png)
+- **Batch Operations:**
+  - Batch QR code generation
+  - Export generation history
+  - Print QR codes directly
 
 ## 🛠️ Installation
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/CRXNCM/BarCode.git
-    cd BarCode
+    git clone https://github.com/yourusername/qr-generator.git
+    cd qr-generator
     ```
 
-2. Install the required packages:
+2. Install required packages:
     ```bash
-    pip install pillow pyzbar
+    pip install qrcode[pil] pillow
     ```
 
 3. Run the application:
     ```bash
-    python Barcode.py
+    python qr_generator.py
     ```
 
 ## 📝 Usage
 
-1. **Open Image:** Click on the "Open Image" button to select an image file containing barcodes.
-2. **View Results:** The detected barcodes will be displayed in the text area.
-3. **Save Results:** Click on the "Save Results" button to save the barcode information to a text file.
+1. **Basic Settings:**
+   - Choose content type
+   - Enter required information
+   - Adjust QR code parameters
+   - Click "Generate" to create QR code
+
+2. **Advanced Settings:**
+   - Customize QR pattern style
+   - Add custom colors
+   - Embed logo
+   - Apply effects
+
+3. **Additional Features:**
+   - Save QR codes in multiple formats
+   - Copy to clipboard
+   - Print directly
+   - Track generation history
 
 ## 🧩 Dependencies
 
 - [Python](https://www.python.org/) (>= 3.6)
-- [Pillow](https://python-pillow.org/) (for image processing)
-- [pyzbar](https://github.com/NaturalHistoryMuseum/pyzbar) (for barcode decoding)
-- [tkinter](https://docs.python.org/3/library/tkinter.html) (for GUI)
+- [qrcode](https://github.com/lincolnloop/python-qrcode)
+- [Pillow](https://python-pillow.org/)
+- [tkinter](https://docs.python.org/3/library/tkinter.html)
 
 ## 👥 Contributing
 
-Contributions are welcome! Please open an issue or submit a pull request for any improvements or features.
+Contributions are welcome! Feel free to open issues or submit pull requests for new features or improvements.
 
+## 🌟 Key Features
 
-## 🌟 Acknowledgements
-
-- [Pillow](https://python-pillow.org/)
-- [pyzbar](https://github.com/NaturalHistoryMuseum/pyzbar)
-- [tkinter](https://docs.python.org/3/library/tkinter.html)
+- User-friendly interface with tabbed organization
+- Real-time QR code preview
+- Multiple styling options
+- Batch processing capabilities
+- History tracking and export
+- Direct printing support
