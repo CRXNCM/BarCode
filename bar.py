@@ -40,6 +40,17 @@ def save_results():
             file.write(result)
         messagebox.showinfo("Saved", f"Results saved to {save_path}")
 
+def copy_to_clipboard():
+    result = result_text.get(1.0, tk.END).strip()
+    if not result:
+        messagebox.showwarning("No Results", "There are no results to copy.")
+        return
+
+    root.clipboard_clear()
+    root.clipboard_append(result)
+    root.update()  # Keeps the clipboard content after the app is closed
+    messagebox.showinfo("Copied", "Results copied to clipboard!")
+
 # Create the main window
 root = tk.Tk()
 root.title("Barcode Reader")
@@ -53,6 +64,9 @@ result_text.pack(padx=10, pady=10)
 
 save_button = tk.Button(root, text="Save Results", command=save_results)
 save_button.pack(pady=10)
+
+copy_button = tk.Button(root, text="Copy to Clipboard", command=copy_to_clipboard)
+copy_button.pack(pady=10)
 
 # Run the application
 root.mainloop()
